@@ -22,6 +22,13 @@ System-bits
   -32 or -64 according to your system architecture
 </pre>
 
+If a JDK tar file exists in [jdks folders](jdks/), you can run (for
+example):
+
+<pre>
+sudo ./jdk-installer.sh jdks/jre-7u75-linux-x64.gz -64
+</pre>
+
 
 Examples
 --------

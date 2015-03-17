@@ -83,7 +83,7 @@ mv $folder $javaDirName
 
 	################################
 	## Find the highest priority
-priority=$( update-java-alternatives -l | cut -f 2 -d ' ' | sort -nr | head -n 1)
+priority=$( sudo update-alternatives --config java -l | cut -f 2 -d ' ' | sort -nr | head -n 1)
 #echo "PRIORITY: $priority"
 if [ "${#priority}" = "0" ]; then
 	priority="1000"
